@@ -1,0 +1,11 @@
+---
+version: 0.1
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      - pip install stacker==1.7.0
+  build:
+    commands:
+      - stacker diff offsite/stacks/offsite-full-env.yaml
