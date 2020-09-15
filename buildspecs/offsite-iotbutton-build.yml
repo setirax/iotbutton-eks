@@ -8,4 +8,4 @@ phases:
       - pip install stacker==1.7.0
   build:
     commands:
-      - stacker diff offsite/stacks/offsite-full-env.yaml
+      - stacker build offsite/stacks/offsite-full-env.yaml
